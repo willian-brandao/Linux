@@ -1,9 +1,13 @@
 
 
-comando para adicionar um grupo ao sistema
+Comando para adicionar um grupo ao sistema
 - groupadd usuarios
 
-comando para visualizar os grupos do sistema
+Comando para visualizar os grupos do sistema
 
 - cat /etc/group
+
+Comando para adicionar um usuário a um grupo
+
+- sudo usermod -aG development john 
 
