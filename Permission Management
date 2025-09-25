@@ -30,4 +30,14 @@ O parâmetro "w" de write para mudar a permissão de escrita.
 Resultado após a modificação:
 -rw-r--rw- 1 root root 54 set 24 22:34 arquivoX.tx
 
+Mudando as permissões de usuarios, grupos e outros
+
+Antes da modificação
+-rw-r--r-- 1 root root 54 set 24 22:34 arquivoX.txt
+
+Comando: chmod ugo+rwx arquivoX.txt
+
+Resultado:
+-rwxrwxrwx 1 root root 54 set 24 22:34 arquivoX.txt
+
 
