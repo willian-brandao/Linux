@@ -1,0 +1,20 @@
+# Criando usuário
+useradd -u 1001 -d /home/user1 -s /bin/bash user1
+
+# Estrutura do comando
+useradd - adiciona o usuário
+-u - parâmetro para especificar o uid do usuário, neste caso 1001
+-d - atribuir o diretório home do usuário
+-s - especifica o interpretador de comando para quando o usuário logar
+
+mkdir /home/user1
+
+mkdir - criar o diretório do usuário
+
+chown user1:user1 /home/user1
+
+mudar o dono da diretório
+chown - comando para realizar a alteração
+user1:user1 - especifica que o usuário será o proprietário e o grupo que será proprietário
+/home/user1 - arquivo ou diretório que será alterado
+
