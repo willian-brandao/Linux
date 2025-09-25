@@ -1,1 +1,33 @@
+Comando para visualizar as permissões de um arquivo ou diretório é o ls em conjunto com o parâmetro -l que exibe todas as informações.
+
+ls -l
+drwxr-xr-x 2 user1   user1   4096 set 24 21:59 user1
+
+Informações visualizadas
+d - tipo de arquivo
+rwxr-xr-x - permissões do arquivo/diretório.
+2 - números de hardlinks para o arquivo ou diretório.
+user1 - proprietário do arquivo/diretório.
+user1 - grupo proprietário do arquivo/diretório.
+4096 - tamanho do arquivo ou bloco usado para armazenar as informações do diretório.
+set 24 21:59 - data de criação ou modificação.
+user1 - nome do arquivo ou diretório.
+
+Modificando permissões
+
+Comando para modificar as permissões de escrita para outros usuários
+
+Antes da modificação é possível notar que o décimo caractere da primeira string apresenta apenas um traço após o r.
+
+-rw-r--r-- 1 root root 54 set 24 22:34 arquivoX.txt
+
+Usando o comando: chmod o+w arquivoX.txt
+Onde o "cmod" muda a permissão.
+O parâmetro "o" especifica que a modificação afeta outros usuários, ou seja, os que não pertecem a um grupo específico ou é o usuário proprietário.
+O parâmetro "+" para agregar o tipo de modificação.
+O parâmetro "w" de write para mudar a permissão de escrita.
+
+Resultado após a modificação:
+-rw-r--rw- 1 root root 54 set 24 22:34 arquivoX.tx
+
 
