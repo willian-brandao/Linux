@@ -1,1 +1,9 @@
 
+
+comando para adicionar um grupo ao sistema
+- groupadd usuarios
+
+comando para visualizar os grupos do sistema
+
+- cat /etc/group
+
